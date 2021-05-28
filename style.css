@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  transition: background-image 1s ease-in-out;
+  background-size: cover;
+}
+
+.time {
+  font-size: 6rem;
+}
+
+h1 {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 700px) {
+  .time {
+    font-size: 4rem;
+  }
+}
+
+.btn {
+  width: 60px;
+  height: 60px;
+  border: 0;
+  background: url("https://www.pngarts.com/files/7/Update-Button-PNG-Image.png") no-repeat;
+  background-size: contain;
+  filter: grayscale(1);
+  margin: 10px;
+}
+
+.btn:hover {
+  filter: grayscale(0.8);
+  cursor: pointer;
+}
+.btn:active,
+.btn:focus {
+  outline: 0;
+}
+.btn:active{
+  transform: scale(1.02)
+}
+
+.btn_angle{
+  width: 60px;
+  height: 60px;
+  border: 0;
+  background: url("https://www.pngarts.com/files/1/Right-Arrow-PNG-Free-Download.png") center no-repeat;
+  background-size: contain;
+  margin: 10px;
+}
+
+.btn_angle:hover {
+  filter: grayscale(0.2);
+  cursor: pointer;
+}
+.btn_angle:active,
+.btn_angle:focus {
+   outline: 2px;
+}
+.btn_angle:active{
+  
+  transform: scale(1.22)
+}
+
+#quote {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  height: 6vh;
+  bottom: 1vh;
+  transition: height 0.25s ease-in;
+}
+
+#quote_text {
+  max-height: 3vh;
+  margin-right: 1vh;
+  margin-left: 1vh;
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
